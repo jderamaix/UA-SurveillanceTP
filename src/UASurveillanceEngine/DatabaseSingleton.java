@@ -9,7 +9,7 @@ public class DatabaseSingleton {
 	/**
 	 * Default constructor
 	 */
-	public DatabaseSingleton() {
+	private DatabaseSingleton() {
 	}
 
 	/**
@@ -32,7 +32,10 @@ public class DatabaseSingleton {
 	 * @return
 	 */
 	public static synchronized DatabaseSingleton getInstance() {
-		return null;
+		if (instance == null){
+			instance = new DatabaseSingleton();
+		}
+		return instance;
 	}
 
 	/**
