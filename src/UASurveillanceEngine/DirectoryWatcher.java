@@ -6,12 +6,12 @@ import java.util.Vector;
 /**
  * 
  */
-public class DiretoryWatcher extends Watcher {
+public class DirectoryWatcher extends Watcher {
 
 	/**
 	 * Default constructor
 	 */
-	public DiretoryWatcher() {
+	public DirectoryWatcher() {
 	}
 
 	/**
