@@ -47,10 +47,6 @@ public class ScreenWatcher extends Watcher {
 	 */
 	private IMediaWriter writer;
 
-	/**
-	 * 
-	 */
-	private boolean isRecording;
 
 	/**
 	 * @return
@@ -85,32 +81,7 @@ public class ScreenWatcher extends Watcher {
         return image;
     }
 
-	/**
-	 * Indique si un enregistrement est en cours
-	 * @return isRecording
-	 */
-	public boolean isRecording() {
 
-		return isRecording;
-
-	}
-
-
-	/**
-	 * Modifie l'état de l'enregistrement
-	 * @param state l'état de l'enregistrement
-	 */
-	public void setRecording(boolean state) {
-
-		this.isRecording = state;
-	}
-
-	/**
-	 * 
-	 */
-	public void stopRecording() {
-		this.isRecording=false;
-	}
 
 	/**
 	 * 
