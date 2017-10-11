@@ -38,7 +38,7 @@ public abstract class Watcher extends Thread {
 	 * Indique si un enregistrement est en cours
 	 * @return isRecording
 	 */
-	public boolean isRecording() {
+	public synchronized boolean isRecording() {
 
 		return isRecording;
 
@@ -49,7 +49,7 @@ public abstract class Watcher extends Thread {
 	 * Modifie l'état de l'enregistrement
 	 * @param state l'état de l'enregistrement
 	 */
-	public void setRecording(boolean state) {
+	public synchronized void setRecording(boolean state) {
 
 		this.isRecording = state;
 	}
