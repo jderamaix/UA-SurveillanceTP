@@ -69,7 +69,6 @@ public class NetworkWatcher extends Watcher {
 	 * redirigé vers un fichier.
 	 */
 	private static String getStringFromStream(InputStream recupFluxDonnee) throws IOException {
-		System.out.println("inside getStringFromStream()");
 		if (recupFluxDonnee != null) {
 			Writer streamIntoString = new StringWriter();
  
@@ -87,6 +86,12 @@ public class NetworkWatcher extends Watcher {
 		} else {
 			return "";
 		}
+	}
+	
+	public static void main(String args[])throws IOException{
+		runTCPDUmp();
+		System.out.println("bonjour");
+		
 	}
 
 }
